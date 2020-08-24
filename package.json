@@ -1,27 +1,24 @@
 {
-  "name": "deferred-promise",
+  "name": "postponed-promise",
   "version": "1.0.0",
-  "description": "Diferred promise - an elegant and simple way to use a promise",
-  "main": "./dist/deferred-promise.min.js",
+  "description": "Postponed promise - an elegant and simple way to use a promise",
+  "main": "./dist/postponed-promise.min.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DonSalvador/deferred-promise.git"
+    "url": "git+https://github.com/DonSalvador/postponed-promise.git"
   },
   "scripts": {
-    "build-sass": "node-sass src/deferred-promise.sass dist/deferred-promise.min.css --output-style=compressed",
-    "build-js": "babel src/deferred-promise.js --out-file dist/deferred-promise.min.js --presets=es2015,babili",
-    "build": "yarn run build-sass && yarn run build-js"
+    "build": "babel src/postponed-promise.js --out-file dist/postponed-promise.min.js --presets=es2015,babili"
   },
   "author": "Salvador Mahave Duran",
   "keywords": [
-    "javascript",
-    "notification",
-    "toaster",
-    "toast"
+    "promise",
+    "postponed",
+    "deferred"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DonSalvador/deferred-promise/issues"
+    "url": "https://github.com/DonSalvador/postponed-promise/issues"
   },
   "homepage": "",
   "devDependencies": {
