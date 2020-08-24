@@ -1,4 +1,4 @@
-# Deferred promise
+# Postponed promise
 
 An elegant and simple way to use a promise
 
@@ -7,19 +7,19 @@ Installation & Usage
 --------------------
 
 ```bash
-yarn add diferred-promise
+yarn add postponed-promise
 ```
 
 ```javascript
-import DiferredPromise from "diferred-promise"
+import PostponedPomise from "postponed-promise"
 
 export default function () {
-  let deferred = new DiferredPromise()
+  let postponedPomise = new PostponedPomise()
 
   doSomething()
-    .then(someParams => deferred.resolve(someParams))
-    .catch(() => deferred.reject())
+    .then(someParams => postponedPomise.resolve(someParams))
+    .catch(postponedPomise.reject)
     
-  return deferred.promise
+  return postponedPomise.promise
 }
 ```
